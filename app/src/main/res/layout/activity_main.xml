@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="338dp"
+        android:layout_height="219dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutKelime"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKelime"
+        app:layout_constraintVertical_bias="0.0"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHarfler1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHarfler"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/textViewHarfA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="A"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="B"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="C"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfC1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="Ç"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="D"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="E"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="F"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="G"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHarfler2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutHarfler1"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/textViewHarfG2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="Ğ"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="H"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfI1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="İ"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="I"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="J"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="K"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="L"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="M"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHarfler3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutHarfler2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/textViewHarfN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="N"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="O"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfO1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="Ö"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="P"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="R"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="S"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfS1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="Ş"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHarfler4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutHarfler3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/textViewHarfT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="T"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="U"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfU1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="Ü"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="V"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="Y"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/textViewHarfZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buttonHarf"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="Z"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewKelime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Kelime"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewHarfler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Harfler"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutKelime"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonOyun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonOyun"
+        android:text="Başlat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutHarfler4"
+        app:layout_constraintVertical_bias="0.529" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
